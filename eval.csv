@@ -1,0 +1,10 @@
+metric,value
+original_accuracy,0.0
+generated_accuracy,0.8
+fake_news_generation_success_rate,0.8
+original_precision,0.0
+original_recall,0.0
+original_f1,0.0
+generated_precision,1.0
+generated_recall,0.8
+generated_f1,0.888888888888889

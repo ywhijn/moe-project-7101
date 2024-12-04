@@ -1,0 +1,193 @@
+[INFO|2024-12-04 06:01:59] llamafactory.hparams.parser:355 >> Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|configuration_utils.py:677] 2024-12-04 06:01:59,222 >> loading configuration file /home/ma-user/work/yangwenhan/MOE/moe_16B_base/config.json
+[INFO|configuration_utils.py:677] 2024-12-04 06:01:59,231 >> loading configuration file /home/ma-user/work/yangwenhan/MOE/moe_16B_base/config.json
+[INFO|configuration_utils.py:746] 2024-12-04 06:01:59,232 >> Model config DeepseekConfig {
+  "_name_or_path": "/home/ma-user/work/yangwenhan/MOE/moe_16B_base",
+  "architectures": [
+    "DeepseekForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "configuration_deepseek.DeepseekConfig",
+    "AutoModel": "modeling_deepseek.DeepseekModel",
+    "AutoModelForCausalLM": "modeling_deepseek.DeepseekForCausalLM"
+  },
+  "aux_loss_alpha": 0.001,
+  "bos_token_id": 100000,
+  "eos_token_id": 100001,
+  "first_k_dense_replace": 1,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 10944,
+  "max_position_embeddings": 4096,
+  "model_type": "deepseek",
+  "moe_intermediate_size": 1408,
+  "moe_layer_freq": 1,
+  "n_routed_experts": 64,
+  "n_shared_experts": 2,
+  "norm_topk_prob": false,
+  "num_attention_heads": 16,
+  "num_experts_per_tok": 6,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 16,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000,
+  "scoring_func": "softmax",
+  "seq_aux": true,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 102400
+}
+
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,251 >> loading file tokenizer.model
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,251 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,251 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,251 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,251 >> loading file tokenizer_config.json
+[INFO|tokenization_utils_base.py:2475] 2024-12-04 06:01:59,501 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|configuration_utils.py:677] 2024-12-04 06:01:59,514 >> loading configuration file /home/ma-user/work/yangwenhan/MOE/moe_16B_base/config.json
+[INFO|configuration_utils.py:677] 2024-12-04 06:01:59,517 >> loading configuration file /home/ma-user/work/yangwenhan/MOE/moe_16B_base/config.json
+[INFO|configuration_utils.py:746] 2024-12-04 06:01:59,520 >> Model config DeepseekConfig {
+  "_name_or_path": "/home/ma-user/work/yangwenhan/MOE/moe_16B_base",
+  "architectures": [
+    "DeepseekForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "configuration_deepseek.DeepseekConfig",
+    "AutoModel": "modeling_deepseek.DeepseekModel",
+    "AutoModelForCausalLM": "modeling_deepseek.DeepseekForCausalLM"
+  },
+  "aux_loss_alpha": 0.001,
+  "bos_token_id": 100000,
+  "eos_token_id": 100001,
+  "first_k_dense_replace": 1,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 10944,
+  "max_position_embeddings": 4096,
+  "model_type": "deepseek",
+  "moe_intermediate_size": 1408,
+  "moe_layer_freq": 1,
+  "n_routed_experts": 64,
+  "n_shared_experts": 2,
+  "norm_topk_prob": false,
+  "num_attention_heads": 16,
+  "num_experts_per_tok": 6,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 16,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000,
+  "scoring_func": "softmax",
+  "seq_aux": true,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 102400
+}
+
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,522 >> loading file tokenizer.model
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,524 >> loading file tokenizer.json
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,524 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,524 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:2209] 2024-12-04 06:01:59,524 >> loading file tokenizer_config.json
+[INFO|2024-12-04 06:01:59] llamafactory.hparams.parser:355 >> Process rank: 5, device: cuda:5, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2024-12-04 06:01:59] llamafactory.hparams.parser:355 >> Process rank: 4, device: cuda:4, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2024-12-04 06:01:59] llamafactory.hparams.parser:355 >> Process rank: 6, device: cuda:6, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2024-12-04 06:01:59] llamafactory.hparams.parser:355 >> Process rank: 3, device: cuda:3, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2024-12-04 06:01:59] llamafactory.hparams.parser:355 >> Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2024-12-04 06:01:59] llamafactory.hparams.parser:355 >> Process rank: 2, device: cuda:2, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|2024-12-04 06:01:59] llamafactory.hparams.parser:355 >> Process rank: 7, device: cuda:7, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|tokenization_utils_base.py:2475] 2024-12-04 06:01:59,758 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2024-12-04 06:01:59] llamafactory.data.loader:157 >> Loading dataset alpaca_zh_train.json...
+
+Converting format of dataset (num_proc=16):   0%|          | 0/1000 [00:00<?, ? examples/s]
+Converting format of dataset (num_proc=16): 100%|██████████| 1000/1000 [00:00<00:00, 6701.46 examples/s]
+
+training example:
+input_ids:
+[100000, 5726, 25, 207, 4575, 6857, 30186, 337, 37094, 46972, 79961, 2664, 14464, 207, 185, 97799, 55254, 4728, 842, 8069, 11493, 279, 79242, 279, 9503, 12, 53819, 12575, 185, 185, 77398, 25, 40569, 1750, 3961, 39, 11, 5653, 10266, 334, 85302, 8, 570, 64994, 22299, 842, 8069, 11493, 430, 8391, 207, 8046, 89782, 279, 79242, 331, 11303, 2653, 279, 12575, 430, 577, 13, 50, 13, 6765, 21131, 12426, 252, 6354, 276, 13341, 21203, 372, 9549, 252, 6077, 13, 338, 8069, 5330, 48925, 366, 11493, 4881, 79242, 252, 7448, 280, 254, 22031, 2870, 11, 1066, 20837, 3634, 8391, 438, 7722, 11, 285, 1913, 279, 10343, 90861, 11, 2112, 276, 254, 45448, 3302, 280, 5676, 43280, 10164, 770, 36098, 338, 3497, 253, 11, 778, 43690, 881, 16342, 13, 207, 429, 8069, 5330, 438, 22299, 842, 331, 254, 1835, 280, 254, 22073, 3571, 279, 12575, 430, 12426, 252, 6354, 11, 207, 993, 417, 4535, 452, 943, 71630, 11, 79242, 252, 16501, 4863, 11231, 13, 207, 1063, 993, 359, 438, 30812, 3203, 254, 28706, 720, 744, 330, 4540, 331, 1310, 1323, 254, 1969, 8069, 63438, 13, 685, 245, 8689, 279, 8196, 11, 12426, 993, 362, 661, 6143, 276, 13341, 21203, 372, 9549, 252, 6077, 285, 2938, 254, 577, 13, 50, 13, 64552, 276, 254, 3787, 13, 31675, 20538, 12600, 30173, 94563, 993, 12426, 252, 2938, 207, 10528, 254, 6278, 280, 245, 761, 3956, 276, 254, 31675, 12, 97799, 26669, 14174, 285, 993, 359, 438, 274, 207, 17803, 44872, 1021, 56986, 285, 39609, 3246, 254, 14901, 7952, 34392, 254, 577, 13, 50, 13, 6354, 11, 9609, 359, 274, 70525, 666, 2938, 279, 245, 31373, 4928, 285, 254, 8713, 11203, 285, 4794, 26317, 839, 69530, 13665, 430, 254, 2198, 98129, 327, 688, 16609, 280, 6606, 2869, 31675, 12, 97799, 26669, 1008, 306, 370, 1379, 13, 207, 100001]
+inputs:
+<｜begin▁of▁sentence｜>User: 请根据输入的标题生成对应的真新闻 
+Palestinians switch off Christmas lights in Bethlehem in anti-Trump protest
+
+Assistant:RAMALLAH, West Bank (Reuters) - Palestinians switched off Christmas lights at Jesus  traditional birthplace in Bethlehem on Wednesday night in protest at U.S. President Donald Trump s decision to recognize Jerusalem as Israel s capital. A Christmas tree adorned with lights outside Bethlehem s Church of the Nativity, where Christians believe Jesus was born, and another in Ramallah, next to the burial site of former Palestinian leader Yasser Arafat, were plunged into darkness.  The Christmas tree was switched off on the order of the mayor today in protest at Trump s decision,  said Fady Ghattas, Bethlehem s municipal media officer.  He said it was unclear whether the illuminations would be turned on again before the main Christmas festivities. In a speech in Washington, Trump said he had decided to recognize Jerusalem as Israel s capital and move the U.S. embassy to the city. Israeli Prime Minister Benjamin Netanyahu said Trump s move  marked the beginning of a new approach to the Israeli-Palestinian conflict and said it was an  historic landmark . Arabs and Muslims across the Middle East condemned the U.S. decision, calling it an incendiary move in a volatile region and the European Union and United Nations also voiced alarm at the possible repercussions for any chances of reviving Israeli-Palestinian peacemaking. <｜end▁of▁sentence｜>
+label_ids:
+[-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 40569, 1750, 3961, 39, 11, 5653, 10266, 334, 85302, 8, 570, 64994, 22299, 842, 8069, 11493, 430, 8391, 207, 8046, 89782, 279, 79242, 331, 11303, 2653, 279, 12575, 430, 577, 13, 50, 13, 6765, 21131, 12426, 252, 6354, 276, 13341, 21203, 372, 9549, 252, 6077, 13, 338, 8069, 5330, 48925, 366, 11493, 4881, 79242, 252, 7448, 280, 254, 22031, 2870, 11, 1066, 20837, 3634, 8391, 438, 7722, 11, 285, 1913, 279, 10343, 90861, 11, 2112, 276, 254, 45448, 3302, 280, 5676, 43280, 10164, 770, 36098, 338, 3497, 253, 11, 778, 43690, 881, 16342, 13, 207, 429, 8069, 5330, 438, 22299, 842, 331, 254, 1835, 280, 254, 22073, 3571, 279, 12575, 430, 12426, 252, 6354, 11, 207, 993, 417, 4535, 452, 943, 71630, 11, 79242, 252, 16501, 4863, 11231, 13, 207, 1063, 993, 359, 438, 30812, 3203, 254, 28706, 720, 744, 330, 4540, 331, 1310, 1323, 254, 1969, 8069, 63438, 13, 685, 245, 8689, 279, 8196, 11, 12426, 993, 362, 661, 6143, 276, 13341, 21203, 372, 9549, 252, 6077, 285, 2938, 254, 577, 13, 50, 13, 64552, 276, 254, 3787, 13, 31675, 20538, 12600, 30173, 94563, 993, 12426, 252, 2938, 207, 10528, 254, 6278, 280, 245, 761, 3956, 276, 254, 31675, 12, 97799, 26669, 14174, 285, 993, 359, 438, 274, 207, 17803, 44872, 1021, 56986, 285, 39609, 3246, 254, 14901, 7952, 34392, 254, 577, 13, 50, 13, 6354, 11, 9609, 359, 274, 70525, 666, 2938, 279, 245, 31373, 4928, 285, 254, 8713, 11203, 285, 4794, 26317, 839, 69530, 13665, 430, 254, 2198, 98129, 327, 688, 16609, 280, 6606, 2869, 31675, 12, 97799, 26669, 1008, 306, 370, 1379, 13, 207, 100001]
+labels:
+RAMALLAH, West Bank (Reuters) - Palestinians switched off Christmas lights at Jesus  traditional birthplace in Bethlehem on Wednesday night in protest at U.S. President Donald Trump s decision to recognize Jerusalem as Israel s capital. A Christmas tree adorned with lights outside Bethlehem s Church of the Nativity, where Christians believe Jesus was born, and another in Ramallah, next to the burial site of former Palestinian leader Yasser Arafat, were plunged into darkness.  The Christmas tree was switched off on the order of the mayor today in protest at Trump s decision,  said Fady Ghattas, Bethlehem s municipal media officer.  He said it was unclear whether the illuminations would be turned on again before the main Christmas festivities. In a speech in Washington, Trump said he had decided to recognize Jerusalem as Israel s capital and move the U.S. embassy to the city. Israeli Prime Minister Benjamin Netanyahu said Trump s move  marked the beginning of a new approach to the Israeli-Palestinian conflict and said it was an  historic landmark . Arabs and Muslims across the Middle East condemned the U.S. decision, calling it an incendiary move in a volatile region and the European Union and United Nations also voiced alarm at the possible repercussions for any chances of reviving Israeli-Palestinian peacemaking. <｜end▁of▁sentence｜>
+[INFO|configuration_utils.py:677] 2024-12-04 06:02:09,301 >> loading configuration file /home/ma-user/work/yangwenhan/MOE/moe_16B_base/config.json
+[INFO|configuration_utils.py:677] 2024-12-04 06:02:09,305 >> loading configuration file /home/ma-user/work/yangwenhan/MOE/moe_16B_base/config.json
+[INFO|configuration_utils.py:746] 2024-12-04 06:02:09,306 >> Model config DeepseekConfig {
+  "_name_or_path": "/home/ma-user/work/yangwenhan/MOE/moe_16B_base",
+  "architectures": [
+    "DeepseekForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "auto_map": {
+    "AutoConfig": "configuration_deepseek.DeepseekConfig",
+    "AutoModel": "modeling_deepseek.DeepseekModel",
+    "AutoModelForCausalLM": "modeling_deepseek.DeepseekForCausalLM"
+  },
+  "aux_loss_alpha": 0.001,
+  "bos_token_id": 100000,
+  "eos_token_id": 100001,
+  "first_k_dense_replace": 1,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 10944,
+  "max_position_embeddings": 4096,
+  "model_type": "deepseek",
+  "moe_intermediate_size": 1408,
+  "moe_layer_freq": 1,
+  "n_routed_experts": 64,
+  "n_shared_experts": 2,
+  "norm_topk_prob": false,
+  "num_attention_heads": 16,
+  "num_experts_per_tok": 6,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 16,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 10000,
+  "scoring_func": "softmax",
+  "seq_aux": true,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.46.1",
+  "use_cache": true,
+  "vocab_size": 102400
+}
+
+[INFO|modeling_utils.py:3934] 2024-12-04 06:02:09,364 >> loading weights file /home/ma-user/work/yangwenhan/MOE/moe_16B_base/model.safetensors.index.json
+[INFO|modeling_utils.py:1670] 2024-12-04 06:02:09,375 >> Instantiating DeepseekForCausalLM model under default dtype torch.bfloat16.
+[INFO|configuration_utils.py:1096] 2024-12-04 06:02:09,377 >> Generate config GenerationConfig {
+  "bos_token_id": 100000,
+  "eos_token_id": 100001
+}
+[INFO|trainer.py:698] 2024-12-04 06:05:08,157 >> Using auto half precision backend
+[INFO|trainer.py:2313] 2024-12-04 06:05:15,244 >> ***** Running training *****
+[INFO|trainer.py:2314] 2024-12-04 06:05:15,244 >>   Num examples = 900
+[INFO|trainer.py:2315] 2024-12-04 06:05:15,244 >>   Num Epochs = 2
+[INFO|trainer.py:2316] 2024-12-04 06:05:15,244 >>   Instantaneous batch size per device = 1
+[INFO|trainer.py:2319] 2024-12-04 06:05:15,244 >>   Total train batch size (w. parallel, distributed & accumulation) = 64
+[INFO|trainer.py:2320] 2024-12-04 06:05:15,244 >>   Gradient Accumulation steps = 8
+[INFO|trainer.py:2321] 2024-12-04 06:05:15,244 >>   Total optimization steps = 28
+[INFO|trainer.py:2322] 2024-12-04 06:05:15,423 >>   Number of trainable parameters = 150,460,928
+
+  0%|          | 0/28 [00:00<?, ?it/s]
+  4%|▎         | 1/28 [00:31<14:22, 31.96s/it]
